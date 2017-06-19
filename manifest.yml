@@ -1,0 +1,8 @@
+---
+applications:
+- name: analytics-restarter
+buildpack: ruby_buildpack
+instances: 1
+memory: 128M
+services:
+- circleci
