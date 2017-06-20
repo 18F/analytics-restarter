@@ -14,9 +14,10 @@ module Restarter
       interval = IntervalCalculator.new.calculate_interval
       Thread.new do
         begin
+          logger.info "Restarting in #{interval} seconds"
           sleep interval
           CircleProjectLoader.new.load_projects.each do |project|
-            logger.info("Restarting #{project.name}")
+            logger.info "Restarting #{project.name}"
             project.rebuild
           end
         rescue StandardError => e
