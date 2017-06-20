@@ -8,7 +8,7 @@ module Restarter
 
   class << self
     def restart
-      logger = Logger.new(STDOUT)
+      logger = Logger.new(STDERR)
       logger.level = Logger::INFO
 
       interval = IntervalCalculator.new.calculate_interval
