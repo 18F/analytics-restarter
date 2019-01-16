@@ -1,5 +1,0 @@
-deployment:
-  master:
-    branch: master
-    commands:
-      - bin/deploy-ci.sh
