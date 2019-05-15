@@ -6,3 +6,4 @@ instances: 1
 memory: 128M
 services:
 - circleci
+stack: cflinuxfs3
