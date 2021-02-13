@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/18F/analytics-restarter.svg?style=svg)](https://circleci.com/gh/18F/analytics-restarter)
+
 # Analytics Restarter
 
 This app triggers nightly builds for the apps that makeup the [analytics.usa.gov](https://analytics.usa.gov) system. These apps include:
